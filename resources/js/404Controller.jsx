@@ -7,12 +7,12 @@ import ReactDOM from "react-dom/client";
 import MainLayouts from "./Layouts/MainLayouts";
 
 // Importing Pages
-import Home from "./Pages/Home"
+import NotFound from "./Errors/404"
 
-ReactDOM.createRoot(document.getElementById("Home")).render(
+ReactDOM.createRoot(document.getElementById("404")).render(
     <>
     <MainLayouts>
-    <Home />
+    <NotFound />
     </MainLayouts>
   </>
 );
