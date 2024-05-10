@@ -88,9 +88,9 @@ const Home_Hero = () => {
                   <div className="camera" />
                   <div className="display">
                     <div className="artboard artboard-demo phone-1">
-                      <iframe
-                        src="http://itsreezky.my.id/"
-                        width={350}
+                      <iframe className='ms-2'
+                        src="http://127.0.0.1:8000/"
+                        width={320}
                         height={600}
                       />
                     </div>
@@ -211,43 +211,19 @@ const Home_Hero = () => {
 
                 <div className="stat">
                   <div className="stat-figure text-pink-600">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      className="inline-block w-8 h-8 stroke-current"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                      />
-                    </svg>
+                  <i className="fa-solid fa-magnifying-glass fa-xl"></i>
                   </div>
-                  <div className="stat-title">Total Likes</div>
-                  <div className="stat-value text-pink-600">25.6K</div>
-                  <div className="stat-desc">21% more than last month</div>
+                  <div className="stat-title">Page Searched</div>
+                  <div className="stat-value text-pink-600">624</div>
+                  <div className="stat-desc">14% more than last month</div>
                 </div>
 
                 <div className="stat">
                   <div className="stat-figure text-blue-500">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      className="inline-block w-8 h-8 stroke-current"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M13 10V3L4 14h7v7l9-11h-7z"
-                      />
-                    </svg>
+                  <i className="fa-regular fa-eye fa-xl"></i>
                   </div>
                   <div className="stat-title">Page Views</div>
-                  <div className="stat-value text-blue-600">2.6M</div>
+                  <div className="stat-value text-blue-600">1.2K</div>
                   <div className="stat-desc">21% more than last month</div>
                 </div>
 

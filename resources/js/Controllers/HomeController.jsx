@@ -4,15 +4,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 // Importing Layouts
-import MainLayouts from "../Layouts/MainLayouts";
+import HomeLayouts from "../Layouts/HomeLayouts";
 
 // Importing Pages
 import Home from "../Pages/Home"
 
 ReactDOM.createRoot(document.getElementById("Home")).render(
     <>
-    <MainLayouts>
+    <HomeLayouts>
     <Home />
-    </MainLayouts>
+    </HomeLayouts>
   </>
 );

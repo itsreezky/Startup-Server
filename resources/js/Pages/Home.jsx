@@ -3,21 +3,25 @@
 // LinkedIn: https://www.linkedin.com/in/itsreezky/
 // Website: https://itsreezky.my.id
 // Github: https://github.com/itsreezky
-// Website Builder : React.js, Laravel, Vite, TailwindCSS, Bootstrap, FontAwesome
-// Comment Date: 2024/05/09 17:48:00
+// Website Builder : React.js, Laravel, Vite, TailwindCSS, DaisyUI, Bootstrap, FontAwesome
+// Comment Date: 10/05/2024 15:02:54
 
 import React from "react";
 
 import Home_Hero from "../Components/Home/Home_Hero";
+
 // About
 import Home_SectionOneTextSlider from "../Components/Home/Home_SectioneOneTextSlider";
 import Home_SectionOne from "../Components/Home/Home_SectionOne";
+
 // Founder
 import Home_FounderTextSlider from "../Components/Home/Home_FounderTextSlider";
 import Home_Founder from "../Components/Home/Home_Founder";
+
 // Portal
 import Home_PortalTextSlider from "../Components/Home/Home_PortalTextSlider";
 import Home_Portal from "../Components/Home/Home_Portal";
+
 // Blog
 import Home_BlogTextSlider from "../Components/Home/Home_BlogTextSlider";
 import Home_Blog from "../Components/Home/Home_Blog";
