@@ -100,15 +100,15 @@ const Home_Hero = () => {
             </div>
           </div>
 
-          <div className="text-md-start text-start d-md-flex d-grid align-items-center justify-content-md-between justify-content-center mt-xxl-5 mt-xl-15 mt-lg-10 mt-md-0 mt-0">
+          <div className="text-md-start text-start d-md-flex d-grid align-items-center justify-content-md-between justify-content-center mt-xxl-3 mt-xl-12 mt-lg-10 mt-md-0 mt-0">
             <div className="about-sponsor">
               <div
-                className="brand d-flex gap-2 align-items-start mb-xxl-8 mb-xl-7 mb-lg-5 mb-5"
+                className="brand d-flex gap-2 align-items-start mb-xxl-1 mb-xl-5 mb-lg-3 mb-3"
                 data-aos="zoom-in-up"
                 data-aos-duration={1600}
                 data-aos-delay={5}
               >
-                <span className="designers1 mt-xxl-0 mt-0">
+                <span className="designers1 mt-xxl-0 mt-0 mb-2">
                   <i className="fa-solid fa-circle-info me-2" />Server builder
                 </span>
                 <span className="brand-border d-xxl-block d-none" />
@@ -158,6 +158,17 @@ const Home_Hero = () => {
                     {' '}
                     <b className="text-teal-500">
                       <i className="fa-solid fa-wind" /> TailwindCSS
+                    </b>
+                    {' '}
+                    <span className="d-md-inline d-none">
+                      for stylish design components.
+                    </span>
+                  </li>
+                  <li>
+                    -
+                    {' '}
+                    <b className="text-yellow-400">
+                    <i className="fa-brands fa-uikit"></i> DaisyUI
                     </b>
                     {' '}
                     <span className="d-md-inline d-none">
@@ -281,7 +292,7 @@ const Home_Hero = () => {
           </a>
           <a href="https://x.com/itscoldhuman">
             <center>
-              <i className="fa-brands fa-x" />
+              <i className="fa-brands fa-twitter" />
             </center>
             <span className="designers1 ms-3 d-md-block d-none">Twitter</span>
           </a>

@@ -22,7 +22,7 @@ Version: 1.0.0
   --place: #858585;
   --tag: #646464;
   --bspan: #ababab;
-  
+
 }
 
 /* -----------------------
@@ -377,6 +377,11 @@ span {
   transform: rotate(60deg);
   transition: all 0.4s;
 }
+
+.rot35 {
+    transform: rotate(35deg);
+    transition: all 0.4s;
+  }
 
 .bspan-clr {
   color: var(--bspan);
@@ -1480,11 +1485,11 @@ footer {
 
 .hero-section-version3 {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.7)
   ),
   url(../img/itsreezky/itsreezky-moockup3.png) no-repeat center center;
-  
+
   background-size: cover;
   padding: 130px 2px 100px;
 }
@@ -1800,6 +1805,7 @@ footer {
   border-color: var(--border1);
   display: block;
   width: 60%;
+  margin-top: 15px;
 }
 .about-sponsor .sponsor-inner a {
   max-width: 150px;
@@ -2754,7 +2760,7 @@ input.main-search-input::placeholder {
   border: 1px solid var(--theme) !important;
 }
 .radius-btn.style-2:hover span {
-  transform: rotate(90deg);
+  transform: rotate(360deg);
 }
 .radius-btn.style-2:hover span i {
   color: var(--theme) !important;

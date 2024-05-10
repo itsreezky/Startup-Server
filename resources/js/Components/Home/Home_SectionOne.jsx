@@ -34,6 +34,7 @@ const Home_SectionOne = () => {
     <b className="text-red-500"> Laravel</b>,
     <b className="text-green-500"> Vite</b>,
     <b className="text-teal-500"> Tailwind CSS</b>,
+    <b className="text-yellow-400"> DaisyUI</b>,
     <b className="text-purple-500"> Bootstrap</b>, and
     <b className="text-blue-500"> Font Awesome</b>,
     this project delivers cutting-edge solutions across frontend, backend, and design components.

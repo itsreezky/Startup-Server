@@ -6,6 +6,8 @@
 // Website Builder : React.js, Laravel, Vite, TailwindCSS, Bootstrap, FontAwesome
 // Comment Date: 2024/05/09 17:48:00
 
+import React from "react";
+
 import Home_Hero from "../Components/Home/Home_Hero";
 // About
 import Home_SectionOneTextSlider from "../Components/Home/Home_SectioneOneTextSlider";

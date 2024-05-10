@@ -60,9 +60,11 @@ const Header = () => {
                       </ul>
                     </li>
                     <li className="menu-item position-relative">
+                        <a href="/portofolio">
                       <button className="position-relative  ps-5 fw_500 white-clr cus-z1">
                         Portofolio
                       </button>
+                      </a>
                     </li>
                     <li className="menu-item position-relative">
                       <button className="position-relative  ps-5 fw_500 white-clr cus-z1">
