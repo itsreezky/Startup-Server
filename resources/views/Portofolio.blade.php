@@ -14,7 +14,7 @@
 
   <!-- == Page title == -->
 
-  <title>itsReezky - Main Startup Server</title>
+  <title>itsReezky - Portofilio</title>
 
   <!-- == Stylesheets == -->
 

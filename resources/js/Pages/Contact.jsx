@@ -1,3 +1,11 @@
+// Author: its Reezky
+// Email: master@itsreezky.my.id
+// LinkedIn: https://www.linkedin.com/in/itsreezky/
+// Website: https://itsreezky.my.id
+// Github: https://github.com/itsreezky
+// Website Builder : React.js, Laravel, Vite, TailwindCSS, DaisyUI, Bootstrap, FontAwesome
+// Comment Date: 10/05/2024 23:17:50
+
 import React from 'react';
 
 // Import Components

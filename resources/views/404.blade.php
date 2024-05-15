@@ -14,7 +14,7 @@
 
   <!-- == Page title == -->
 
-  <title>itsReezky - Main Startup Server</title>
+  <title>itsReezky - 404 NotFound</title>
 
   <!-- == Stylesheets == -->
 

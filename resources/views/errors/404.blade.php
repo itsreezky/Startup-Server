@@ -14,12 +14,12 @@
 
   <!-- == Page title == -->
 
-  <title>itsReezky - Main Startup Server</title>
+  <title>itsReezky - 404 NotFound</title>
 
   <!-- == Stylesheets == -->
 
   <!-- Favicon/x-icon -->
-  <link rel="icon" href="assets/img/itsreezky/itsreezky-icon.png" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <!-- Bootstrap Min 5.2.3 Css-->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <!-- DaisyUI -->
@@ -38,7 +38,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
 
     @viteReactRefresh
-    @vite('resources/js/404Controller.jsx')
+    @vite('resources/js/Controllers/404Controller.jsx')
 </head>
 
 <body class="position-relative bg2-clr">

@@ -1,11 +1,46 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
+import { fetchPublicServerData, fetchPrivateServerData, fetchToolsServerData } from '../../Api/ServerStatus';
 
 const Home_Hero = () => {
+    const [apiData1, setApiData1] = useState(null);
+    const [apiData2, setApiData2] = useState(null);
+    const [apiData3, setApiData3] = useState(null);
+    const [setError] = useState(null);
+
+    useEffect(() => {
+      fetchPublicServerData()
+        .then(response => {
+          setApiData1(response.data);
+        })
+        .catch(error => {
+          console.error('Error fetching data: ', error);
+          setError(error);
+        });
+
+      fetchPrivateServerData()
+        .then(response => {
+          setApiData2(response.data);
+        })
+        .catch(error => {
+          console.error('Error fetching data: ', error);
+          setError(error);
+        });
+
+      fetchToolsServerData()
+        .then(response => {
+          setApiData3(response.data);
+        })
+        .catch(error => {
+          console.error('Error fetching data: ', error);
+          setError(error);
+        });
+    }, []);
+
   return (
+
     <div>
-
       {/* Hero Section */}
-
       <section className="hero-section-version2 hero-section-version3 position-relative">
         <div className="container">
           <div className="row g-5 align-items-center justify-content-between">
@@ -55,31 +90,49 @@ const Home_Hero = () => {
                   </p>
                 </div>
                 <div className="row p-2 gap-2">
-                  <div className="col-xxl-2 col-md-4 mb-3 ms-10">
-                    <button className="btn btn-outline btn-secondary">
-                      <b>Public <br /> Server</b>
-                      <div className="badge text-green-400">
-                        <i className="fa-regular fa-circle-check me-1" /> ACTIVE
-                      </div>
-                    </button>
-                  </div>
-                  <div className="col-xxl-2 col-md-4 mb-3 ms-10">
-                    <button className="btn btn-outline btn-secondary">
-                      <b>Private <br /> Server</b>
-                      <div className="badge text-green-400">
-                        <i className="fa-regular fa-circle-check me-1" /> ACTIVE
-                      </div>
-                    </button>
-                  </div>
-                  <div className="col-xxl-2 col-md-4 mb-3 ms-10">
-                    <button className="btn btn-outline btn-secondary">
-                      <b>Tools <br /> Server</b>
-                      <div className="badge text-green-400">
-                        <i className="fa-regular fa-circle-check me-1" /> ACTIVE
-                      </div>
-                    </button>
-                  </div>
-                </div>
+  <div className="col-xxl-2 col-md-4 mb-3 ms-10">
+    <button className="btn btn-outline btn-secondary">
+      <b>Public <br /> Server</b>
+      {apiData1 && apiData1.success === true ? (
+        <div className="badge text-green-400">
+          <i className="fa-regular fa-circle-check me-1" /> ACTIVE
+        </div>
+      ) : (
+        <div className="badge text-red-400">
+          <i className="fa-regular fa-circle-x me-1" /> INACTIVE
+        </div>
+      )}
+    </button>
+  </div>
+  <div className="col-xxl-2 col-md-4 mb-3 ms-10">
+    <button className="btn btn-outline btn-secondary">
+      <b>Private <br /> Server</b>
+      {apiData2 && apiData2.success === true ? (
+        <div className="badge text-green-400">
+          <i className="fa-regular fa-circle-check me-1" /> ACTIVE
+        </div>
+      ) : (
+        <div className="badge text-red-400">
+          <i className="fa-regular fa-circle-x me-1" /> INACTIVE
+        </div>
+      )}
+    </button>
+  </div>
+  <div className="col-xxl-2 col-md-4 mb-3 ms-10">
+    <button className="btn btn-outline btn-secondary">
+      <b>Tools <br /> Server</b>
+      {apiData3 && apiData3.success === true ? (
+        <div className="badge text-green-400">
+          <i className="fa-regular fa-circle-check me-1" /> ACTIVE
+        </div>
+      ) : (
+        <div className="badge text-red-400">
+          <i className="fa-regular fa-circle-x me-1" /> INACTIVE
+        </div>
+      )}
+    </button>
+  </div>
+</div>
               </div>
             </div>
             <div className="col-lg-4 col-md-5">
@@ -88,7 +141,8 @@ const Home_Hero = () => {
                   <div className="camera" />
                   <div className="display">
                     <div className="artboard artboard-demo phone-1">
-                      <iframe className='ms-2'
+                      <iframe
+                        className="ms-2"
                         src="http://127.0.0.1:8000/"
                         width={320}
                         height={600}
@@ -146,7 +200,7 @@ const Home_Hero = () => {
                     -
                     {' '}
                     <b className="text-green-500">
-                    <i className="fa-brands fa-vimeo-v"></i> Vite
+                      <i className="fa-brands fa-vimeo-v" /> Vite
                     </b>
                     {' '}
                     <span className="d-md-inline d-none">
@@ -168,7 +222,7 @@ const Home_Hero = () => {
                     -
                     {' '}
                     <b className="text-yellow-400">
-                    <i className="fa-brands fa-uikit"></i> DaisyUI
+                      <i className="fa-brands fa-uikit" /> DaisyUI
                     </b>
                     {' '}
                     <span className="d-md-inline d-none">
@@ -211,7 +265,7 @@ const Home_Hero = () => {
 
                 <div className="stat">
                   <div className="stat-figure text-pink-600">
-                  <i className="fa-solid fa-magnifying-glass fa-xl"></i>
+                    <i className="fa-solid fa-magnifying-glass fa-xl" />
                   </div>
                   <div className="stat-title">Page Searched</div>
                   <div className="stat-value text-pink-600">624</div>
@@ -220,7 +274,7 @@ const Home_Hero = () => {
 
                 <div className="stat">
                   <div className="stat-figure text-blue-500">
-                  <i className="fa-regular fa-eye fa-xl"></i>
+                    <i className="fa-regular fa-eye fa-xl" />
                   </div>
                   <div className="stat-title">Page Views</div>
                   <div className="stat-value text-blue-600">1.2K</div>
@@ -286,6 +340,6 @@ const Home_Hero = () => {
 
     </div>
   );
-}
+};
 
 export default Home_Hero;

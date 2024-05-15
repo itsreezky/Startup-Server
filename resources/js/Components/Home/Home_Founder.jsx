@@ -63,6 +63,12 @@ const Home_Founder = () => {
               </a>
             </li>
           </ul>
+          <a href="https://resource.itsreezky.my.id/dokumen/CV_MuhammadRizkiRamadhan-EN.pdf">
+          <button className="btn btn-outline btn-secondary me-3 mt-7">CV - EN</button>
+          </a>
+          <a href="https://resource.itsreezky.my.id/dokumen/CV_MuhammadRizkiRamadhan-ID.pdf">
+          <button className="btn btn-outline btn-info ms-3 mt-7">CV - ID</button>
+          </a>
         </div>
       </div>
     </div>
