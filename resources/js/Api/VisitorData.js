@@ -1,7 +1,7 @@
 // api.js
 import axios from 'axios';
 
-const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+const proxyUrl = 'https://api.allorigins.win/raw?url=';
 
 export const AddVisitor = () => {
     const AddVisitor = 'https://visitor.api.akuari.my.id/umum/view/tambah?id=itsreezky.my.id';

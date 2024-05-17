@@ -31,4 +31,4 @@ const Home_SectionOneTextSlider = () => {
   )
 }
 
-export default Home_SectionOneTextSlider
+export default Home_SectionOneTextSlider;

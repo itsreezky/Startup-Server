@@ -123,4 +123,4 @@ const Home_Blog = () => {
   )
 }
 
-export default Home_Blog
+export default Home_Blog;

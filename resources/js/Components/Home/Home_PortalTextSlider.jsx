@@ -31,4 +31,4 @@ const Home_PortalTextSlider = () => {
   )
 }
 
-export default Home_PortalTextSlider
+export default Home_PortalTextSlider;

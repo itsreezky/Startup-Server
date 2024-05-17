@@ -31,4 +31,4 @@ const Home_AboutTextSlider = () => {
   )
 }
 
-export default Home_AboutTextSlider
+export default Home_AboutTextSlider;

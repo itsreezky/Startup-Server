@@ -1,4 +1,24 @@
+import React from 'react';
+import { useState, useEffect } from 'react';
+import { hariIndo, tanggalIndo, jamIndo } from '../../Api/Clock'; // adjust the path as needed
+
 const Header = () => {
+    const [day, setDay] = useState('');
+    const [date, setDate] = useState('');
+    const [time, setTime] = useState('');
+
+    useEffect(() => {
+      const interval = setInterval(() => {
+        const now = new Date();
+        setDay(hariIndo(now.getDay()));
+        setDate(tanggalIndo(now));
+        setTime(jamIndo(now));
+      }, 1000);
+
+      return () => {
+        clearInterval(interval);
+      };
+    }, []);
   return (
     <div>
       {/* Custom Header Start */}
@@ -47,13 +67,18 @@ const Header = () => {
                         Pages
                       </button>
                       <ul className="sub-menu px-lg-4 py-xxl-3 py-2">
+                      <li className="menu-link py-1">
+                          <a href="https://itsreezky.my.id" className="fw_500 white-clr">
+                            Public Server V1
+                          </a>
+                        </li>
                         <li className="menu-link py-1">
                           <a href="https://server.itsreezky.my.id" className="fw_500 white-clr">
                             Private Server
                           </a>
                         </li>
                         <li className="menu-link py-1">
-                          <a href="http://tools.itsreezky.my.id" className="fw_500 white-clr">
+                          <a href="https://tools.itsreezky.my.id" className="fw_500 white-clr">
                             Tools Server
                           </a>
                         </li>
@@ -89,15 +114,9 @@ const Header = () => {
                       <i className="fal fa-search" />
                     </a>
                   </div>
-                  <a
-                    href="/contact"
-                    className="d-flex align-items-center gap-sm-3 gap-2 touch-btn cmn-btn"
-                  >
-                    <span className="rot60">
-                      <i className="fas fa-arrow-up" />
-                    </span>
-                    Get In Touch
-                  </a>
+                  <button className="d-flex align-items-center gap-sm-3 gap-2 touch-btn cmn-btn">
+                  {time} WIB<br/>{day}, {date}
+                  </button>
                 </div>
               </div>
             </nav>

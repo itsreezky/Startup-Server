@@ -2,12 +2,15 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { fetchPublicServerData, fetchPrivateServerData, fetchToolsServerData } from '../../Api/ServerStatus';
 import { AddVisitor, CountVisitor } from '../../Api/VisitorData';
+import { getGreeting } from '../../Api/Greetings';
 
 const Home_Hero = () => {
     const [apiDataPublic, setApiDataPublic] = useState(null);
     const [apiDataPrivate, setApiDataPrivate] = useState(null);
     const [apiDataTools, setApiDataTools] = useState(null);
     const [visitorCount, setVisitorCount] = useState(null);
+    const [greeting, setGreeting] = useState('');
+
     const [setError] = useState(null);
 
     useEffect(() => {
@@ -58,6 +61,14 @@ const Home_Hero = () => {
                 console.error('Error adding visitor: ', error);
             });
 
+            const interval = setInterval(() => {
+                setGreeting(getGreeting());
+              }, 1000);
+
+              return () => {
+                clearInterval(interval);
+              };
+
     }, []);
 
     return (
@@ -80,7 +91,7 @@ const Home_Hero = () => {
                                         data-aos-duration={1400}
                                         data-aos-delay={5}
                                     >
-                                        Welcome to{' '}
+                                        {greeting}<br />Welcome to{' '}
                                     </span>
                                     <span
                                         className="d-flex justify-content-md-start justify-content-center align-items-center gap-xxl-5 gap-3"
@@ -114,7 +125,7 @@ const Home_Hero = () => {
                                 </div>
                                 <div className="row p-2 gap-2">
                                     <div className="col-xxl-2 col-md-4 mb-3 ms-10">
-                                        <button className="btn btn-outline btn-secondary">
+                                        <button className="btn btn-outline btn-secondary" onClick={()=>document.getElementById('public_server').showModal()}>
                                             <b>Public <br /> Server</b>
                                             {apiDataPublic && apiDataPublic.success === true ? (
                                                 <div className="badge text-green-400">
@@ -126,9 +137,28 @@ const Home_Hero = () => {
                                                 </div>
                                             )}
                                         </button>
+                                        {/* Public Server Modal */}
+                                        <dialog id="public_server" className="modal modal-bottom sm:modal-middle">
+  <div className="modal-box">
+    <h3 className="font-bold text-lg text-pink-400"><i className="fa-solid fa-circle-info me-3"></i>Information</h3>
+    {apiDataPublic && (
+      <>
+        <p className='mt-3 mb-2'><strong className='text-pink-400'>Website :</strong><br /> {apiDataPublic.website}</p>
+        <p className='mb-2'><strong className='text-pink-400'>Response Status :</strong><br /> {apiDataPublic.response}</p>
+        <p className='mb-2'><strong className='text-pink-400'>Response Date :</strong><br /> {apiDataPublic.date}</p>
+      </>
+    )}
+    <div className="modal-action">
+      <form method="dialog">
+        {/* if there is a button in form, it will close the modal */}
+        <button className="btn btn-outline btn-secondary">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
                                     </div>
                                     <div className="col-xxl-2 col-md-4 mb-3 ms-10">
-                                        <button className="btn btn-outline btn-secondary">
+                                        <button className="btn btn-outline btn-secondary" onClick={()=>document.getElementById('private_server').showModal()}>
                                             <b>Private <br /> Server</b>
                                             {apiDataPrivate && apiDataPrivate.success === true ? (
                                                 <div className="badge text-green-400">
@@ -140,9 +170,27 @@ const Home_Hero = () => {
                                                 </div>
                                             )}
                                         </button>
+                                        {/* Private Server Modal */}
+<dialog id="private_server" className="modal modal-bottom sm:modal-middle">
+  <div className="modal-box">
+    <h3 className="font-bold text-lg text-pink-400"><i className="fa-solid fa-circle-info me-3"></i>Information</h3>
+    {apiDataPrivate && (
+      <>
+        <p className='mt-3 mb-2'><strong className='text-pink-400'>Website :</strong><br /> {apiDataPrivate.website}</p>
+        <p className='mb-2'><strong className='text-pink-400'>Response Status :</strong><br /> {apiDataPrivate.response}</p>
+        <p className='mb-2'><strong className='text-pink-400'>Response Date :</strong><br /> {apiDataPrivate.date}</p>
+      </>
+    )}
+    <div className="modal-action">
+      <form method="dialog">
+        <button className="btn btn-outline btn-secondary">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
                                     </div>
                                     <div className="col-xxl-2 col-md-4 mb-3 ms-10">
-                                        <button className="btn btn-outline btn-secondary">
+                                        <button className="btn btn-outline btn-secondary" onClick={()=>document.getElementById('tools_server').showModal()}>
                                             <b>Tools <br /> Server</b>
                                             {apiDataTools && apiDataTools.success === true ? (
                                                 <div className="badge text-green-400">
@@ -154,6 +202,24 @@ const Home_Hero = () => {
                                                 </div>
                                             )}
                                         </button>
+                                        {/* Tools Server Modal */}
+<dialog id="tools_server" className="modal modal-bottom sm:modal-middle">
+  <div className="modal-box">
+    <h3 className="font-bold text-lg text-pink-400"><i className="fa-solid fa-circle-info me-3"></i>Information</h3>
+    {apiDataTools && (
+      <>
+        <p className='mt-3 mb-2'><strong className='text-pink-400'>Website :</strong><br /> {apiDataTools.website}</p>
+        <p className='mb-2'><strong className='text-pink-400'>Response Status :</strong><br /> {apiDataTools.response}</p>
+        <p className='mb-2'><strong className='text-pink-400'>Response Date :</strong><br /> {apiDataTools.date}</p>
+      </>
+    )}
+    <div className="modal-action">
+      <form method="dialog">
+        <button className="btn btn-outline btn-secondary">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
                                     </div>
                                 </div>
                             </div>
@@ -166,7 +232,7 @@ const Home_Hero = () => {
                                         <div className="artboard artboard-demo phone-1">
                                             <iframe
                                                 className="ms-2"
-                                                src="http://127.0.0.1:8000/"
+                                                src="http://itsreezky.my.id"
                                                 width={320}
                                                 height={600}
                                             />

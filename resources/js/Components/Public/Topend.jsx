@@ -12,4 +12,4 @@ const Topend = () => {
   )
 }
 
-export default Topend
+export default Topend;

@@ -74,7 +74,7 @@ const Home_Portal = () => {
               </li>
             </ul>
             <div className="price-choose d-flex align-items-center gap-xxl-15 gap-xl-10 gap-lg-7 gap-md-6 gap-sm-4 gap-3">
-              <a href="pricing.html" className="price-under d-flex align-items-center gap-2">
+              <a href="http://server.itsreezky.my.id/" className="price-under d-flex align-items-center gap-2">
                 Visit Server
                 <span className="rot60 d-block">
                   <i className="fas fa-arrow-up" />
@@ -144,7 +144,7 @@ const Home_Portal = () => {
               </li>
             </ul>
             <div className="price-choose d-flex align-items-center gap-xxl-15 gap-xl-10 gap-lg-7 gap-md-6 gap-sm-4 gap-3">
-              <a href="pricing.html" className="price-under d-flex align-items-center gap-2">
+              <a href="http://tools.itsreezky.my.id/" className="price-under d-flex align-items-center gap-2">
                 Visit Tools
                 <span className="rot60 d-block">
                   <i className="fas fa-arrow-up" />
@@ -164,4 +164,4 @@ const Home_Portal = () => {
   )
 }
 
-export default Home_Portal
+export default Home_Portal;

@@ -19,7 +19,7 @@ const Home_SectionOne = () => {
         <div className="about-content-v3">
           <div className="pricing-title">
             <div className="radius-btn cmn-border d-inline-flex radius100 py-xxl-2 py-2 px-xxl-4 px-4 gap-xxl-4 gap-3 mb-xxl-7 mb-xl-6 mb-5" data-aos="fade-up-right" data-aos-duration={1500}>
-             <b className="text-pink-400">ABOUT REEZ.KY</b>
+             <b className="text-pink-400">ABOUT REEZ.KY - SERVER</b>
             </div>
             <h3 className="stitle mb-xxl-8 mb-xl-7 mb-xl-5 mb-4" data-aos="fade-up" data-aos-duration={2000}>
               <b className="text-pink-400">Reez.ky is a server</b> leverages a
@@ -79,12 +79,7 @@ const Home_SectionOne = () => {
                 </span>
               </div>
             </div>
-            <a href="/about" className="radius-btn d-inline-flex text-capitalize radius100 py-xxl-2 py-2 px-xxl-5 px-5 theme-border theme-clr gap-xxl-4 gap-3 mb-xxl-8 mb-xl-6 mb-5 style-2">
-              Explore More
-              <span className="rot60 d-inline-block">
-                <i className="fas fa-arrow-up theme-clr" />
-              </span>
-            </a>
+
           </div>
         </div>
       </div>
@@ -97,4 +92,4 @@ const Home_SectionOne = () => {
   )
 }
 
-export default Home_SectionOne
+export default Home_SectionOne;
