@@ -6,13 +6,13 @@ Description: Xstar - Digital Agency HTML Template<
 Version: 1.0.0
 */
 /*CSS Table Of Content Ends Here*/
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap');
 :root {
   --body: #ffffff;
   --black: #000;
   --white: #fff;
   --spantext: #757575;
-  --theme: rgb(217 70 239);;
+  --theme: rgb(217 70 239);
   --bg1: #161616;
   --bg2: #1b1b1b;
   --bg3: #fff;
@@ -22,14 +22,13 @@ Version: 1.0.0
   --place: #858585;
   --tag: #646464;
   --bspan: #ababab;
-
 }
 
 /* -----------------------
     Template Default Fonts
  ------------------------- */
 body {
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 28px;
@@ -67,7 +66,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   margin: 0px;
   padding: 0;
   color: var(--white);
@@ -121,7 +120,7 @@ p {
   margin: 0px;
   transition: all 0.4s ease-in-out;
   font-size: 16px;
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   color: var(--white);
 }
 
@@ -176,7 +175,7 @@ span {
   margin: 0px;
   transition: all 0.4s ease-in-out;
   font-size: 16px;
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   color: var(--white);
 }
 
@@ -256,7 +255,7 @@ span {
 .slider-button .project-storke {
   font-size: 44px;
   font-weight: 700;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #454750;
   color: transparent;
@@ -379,9 +378,9 @@ span {
 }
 
 .rot35 {
-    transform: rotate(35deg);
-    transition: all 0.4s;
-  }
+  transform: rotate(35deg);
+  transition: all 0.4s;
+}
 
 .bspan-clr {
   color: var(--bspan);
@@ -529,7 +528,11 @@ footer {
   }
 }
 .preloader .animation-preloader .txt-loading {
-  font: bold 5em "Plus Jakarta Sans", sans-serif, "Manrope", sans-serif;
+  font:
+    bold 5em 'Plus Jakarta Sans',
+    sans-serif,
+    'Manrope',
+    sans-serif;
   text-align: center;
   user-select: none;
 }
@@ -575,7 +578,7 @@ footer {
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   position: absolute;
   top: 2px;
   transform: rotateY(-90deg);
@@ -632,13 +635,13 @@ footer {
   background-size: cover;
 }
 .offer-sectionv04 .offer-item {
-  background: #1B1B1B;
+  background: #1b1b1b;
   border-radius: 12px;
 }
 .offer-sectionv04 .offer-item .seri {
   font-size: 50px;
   font-weight: 600;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   color: var(--white);
   opacity: 15%;
 }
@@ -700,8 +703,8 @@ footer {
 }
 .header-section .main-navbar .custom-nav .menu-item button::after {
   position: absolute;
-  content: "\f062";
-  font-family: "FontAwesome";
+  content: '\f062';
+  font-family: 'FontAwesome';
   font-weight: 500;
   font-size: 16px;
   left: 0px;
@@ -735,7 +738,8 @@ footer {
     font-size: 16px;
   }
 }
-.header-section .main-navbar .custom-nav .menu-item button:hover, .header-section .main-navbar .custom-nav .menu-item button.active,
+.header-section .main-navbar .custom-nav .menu-item button:hover,
+.header-section .main-navbar .custom-nav .menu-item button.active,
 .header-section .main-navbar .custom-nav .menu-item a:hover,
 .header-section .main-navbar .custom-nav .menu-item a.active,
 .header-section .main-navbar .custom-nav .menu-link button:hover,
@@ -744,7 +748,8 @@ footer {
 .header-section .main-navbar .custom-nav .menu-link a.active {
   color: var(--theme);
 }
-.header-section .main-navbar .custom-nav .menu-item button:hover::after, .header-section .main-navbar .custom-nav .menu-item button.active::after,
+.header-section .main-navbar .custom-nav .menu-item button:hover::after,
+.header-section .main-navbar .custom-nav .menu-item button.active::after,
 .header-section .main-navbar .custom-nav .menu-item a:hover::after,
 .header-section .main-navbar .custom-nav .menu-item a.active::after,
 .header-section .main-navbar .custom-nav .menu-link button:hover::after,
@@ -830,7 +835,8 @@ footer {
 .header-section .main-navbar .navbar-toggle-btn span:nth-child(1) {
   top: 0;
 }
-.header-section .main-navbar .navbar-toggle-btn span:nth-child(2), .header-section .main-navbar .navbar-toggle-btn span:nth-child(3) {
+.header-section .main-navbar .navbar-toggle-btn span:nth-child(2),
+.header-section .main-navbar .navbar-toggle-btn span:nth-child(3) {
   top: 12px;
 }
 .header-section .main-navbar .navbar-toggle-btn span:nth-child(4) {
@@ -1060,7 +1066,7 @@ footer {
 
 .home-onetext .textitalick {
   font-style: italic;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400 !important;
 }
 .home-onetext img {
@@ -1069,7 +1075,7 @@ footer {
 
 .testi-italic .textitalick {
   font-style: italic;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400 !important;
 }
 
@@ -1222,7 +1228,6 @@ footer {
   -webkit-text-stroke-color: var(--white);
 }
 
-
 .hero-v1-content h1 .designers::before {
   content: attr(data-text);
   position: absolute;
@@ -1268,14 +1273,14 @@ footer {
   position: relative;
   display: inline-flex;
   align-items: center;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 22px;
   font-weight: 400;
 }
 .hero-v1-content .hero-sponsor .brading-text::before {
   position: absolute;
   left: 102%;
-  content: "";
+  content: '';
   width: 344px;
   height: 1px;
   background: var(--border1);
@@ -1356,7 +1361,7 @@ footer {
 .hero-section-version2 .hero-v2-content h1 span {
   font-size: 80px;
   line-height: 100px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 .hero-section-version2 .hero-v2-content h1 .regular {
   font-weight: 400;
@@ -1397,7 +1402,7 @@ footer {
 .hero-section-version2 .spilit-socail a {
   text-transform: uppercase;
   font-size: 20px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 .hero-section-version2 .spilit-socail a:hover {
   color: var(--theme);
@@ -1484,11 +1489,9 @@ footer {
 }
 
 .hero-section-version3 {
-  background: linear-gradient(
-    rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7)
-  ),
-  url(../img/itsreezky/itsreezky-moockup3.png) no-repeat center center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/itsreezky/itsreezky-moockup3.png) no-repeat center center;
 
   background-size: cover;
   padding: 130px 2px 100px;
@@ -1506,7 +1509,7 @@ footer {
   max-width: 490px;
 }
 .hero-section-version3 .hero-v3-content h1 {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   text-transform: none;
 }
 .hero-section-version3 .hero-v3-content h1 span {
@@ -1644,7 +1647,7 @@ footer {
   padding: 250px 2px 220px;
 }
 .hero-section-version4 .hero-v4-content h1 span {
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 100px;
   font-weight: 800;
   line-height: 139px;
@@ -1754,7 +1757,7 @@ footer {
   position: absolute;
   left: 0;
   top: -24px;
-  content: "";
+  content: '';
   width: 15px;
   height: 16px;
   background: var(--theme);
@@ -2182,7 +2185,7 @@ input.main-search-input::placeholder {
   height: 4px;
   border-radius: 50%;
   background: var(--white);
-  content: "";
+  content: '';
   transition: all 0.4s;
 }
 .blog-right-bar .box .category ul li a:hover {
@@ -2257,7 +2260,7 @@ input.main-search-input::placeholder {
   width: 4px;
   height: 4px;
   background: var(--white);
-  content: "";
+  content: '';
   border-radius: 50%;
 }
 .blog-post-details .single-blog-post .post-content .hilight-text {
@@ -2375,7 +2378,7 @@ input.main-search-input::placeholder {
 .case-infobox li span {
   font-size: 18px;
   font-weight: 400;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 .case-infobox li:not(:last-child) {
   border-bottom: 1px solid var(--border1);
@@ -2419,7 +2422,7 @@ input.main-search-input::placeholder {
   left: 0;
   width: 98%;
   height: 100%;
-  content: "";
+  content: '';
   background: var(--theme);
 }
 .case-study-detials-inner .fiial-result-list {
@@ -2437,7 +2440,7 @@ input.main-search-input::placeholder {
 .case-study-detials-inner .fiial-result-list ul li::before {
   position: absolute;
   left: 0;
-  content: "";
+  content: '';
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -2487,7 +2490,7 @@ input.main-search-input::placeholder {
   left: 0;
   width: 98%;
   height: 100%;
-  content: "";
+  content: '';
   background: var(--theme);
 }
 
@@ -2633,7 +2636,7 @@ input.main-search-input::placeholder {
 .contact-content form textarea::after {
   border-bottom: 2px solid var(--theme);
   border-right: 2px solid var(--theme);
-  content: "";
+  content: '';
   display: block;
   height: 10px;
   margin-top: -4px;
@@ -2778,7 +2781,7 @@ input.main-search-input::placeholder {
 }
 .touch-btn::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 10px;
   height: 10px;
   left: 0;
@@ -2828,7 +2831,7 @@ input.main-search-input::placeholder {
 .case-btn::before {
   background: var(--white);
   opacity: 20%;
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   border-radius: 50%;
@@ -2885,21 +2888,27 @@ input.main-search-input::placeholder {
   }
 }
 @-webkit-keyframes letters-loading {
-  0%, 75%, 100% {
+  0%,
+  75%,
+  100% {
     opacity: 0;
     transform: rotateY(-90deg);
   }
-  25%, 50% {
+  25%,
+  50% {
     opacity: 1;
     transform: rotateY(0deg);
   }
 }
 @keyframes letters-loading {
-  0%, 75%, 100% {
+  0%,
+  75%,
+  100% {
     opacity: 0;
     transform: rotateY(-90deg);
   }
-  25%, 50% {
+  25%,
+  50% {
     opacity: 1;
     transform: rotateY(0deg);
   }
@@ -3050,7 +3059,7 @@ input.main-search-input::placeholder {
 }
 
 .faq .header-area button::before {
-  content: "";
+  content: '';
   background-color: var(--bg2);
   width: 38px;
   min-width: 38px;
@@ -3059,8 +3068,8 @@ input.main-search-input::placeholder {
 }
 
 .faq .header-area button::after {
-  content: "\f101";
-  font-family: "FontAwesome";
+  content: '\f101';
+  font-family: 'FontAwesome';
   font-size: 20px;
   transform: rotate(0deg);
   transition: all 0.5s;
@@ -3088,7 +3097,7 @@ input.main-search-input::placeholder {
 }
 
 .faq .active button::after {
-  font-family: "FontAwesome";
+  font-family: 'FontAwesome';
   transform: rotate(90deg);
   font-weight: 700;
   color: var(--theme);
@@ -3116,8 +3125,8 @@ input.main-search-input::placeholder {
   border-radius: 0;
 }
 .service-tabing-wrap .accordion-single .accordion-btn::after {
-  content: "+";
-  font-family: "FontAwesome";
+  content: '+';
+  font-family: 'FontAwesome';
   font-size: 20px;
   transform: rotate(0deg);
   transition: all 0.5s;
@@ -3165,8 +3174,8 @@ input.main-search-input::placeholder {
   justify-content: space-between;
 }
 .service-tabing-wrap .accordion-single.active .accordion-btn::after {
-  content: "\f068";
-  font-family: "FontAwesome";
+  content: '\f068';
+  font-family: 'FontAwesome';
   color: var(--theme);
 }
 .service-tabing-wrap .accordion-single.active .accordion-btn::after:hover {
@@ -3449,12 +3458,12 @@ input.main-search-input::placeholder {
 
 .team-card01 .thumb::before {
   position: absolute;
-  content: "";
+  content: '';
   bottom: -100%;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(239, 100, 76, 0) 64.05%, #E3FF04 115.68%);
+  background: linear-gradient(180deg, rgba(239, 100, 76, 0) 64.05%, #e3ff04 115.68%);
   transition: all 0.5s;
 }
 .team-card01 .thumb .common-social {
@@ -3492,7 +3501,7 @@ input.main-search-input::placeholder {
   left: 0;
   width: 24px;
   height: 2px;
-  content: "";
+  content: '';
   background: var(--theme);
 }
 .team-card01:hover .content .bspan-clr {
@@ -3503,7 +3512,7 @@ input.main-search-input::placeholder {
 }
 .team-card01:hover .thumb::before {
   bottom: 0;
-  background: linear-gradient(180deg, rgba(239, 100, 76, 0) 64.05%, #E3FF04 115.68%);
+  background: linear-gradient(180deg, rgba(239, 100, 76, 0) 64.05%, #e3ff04 115.68%);
 }
 .team-card01:hover .thumb .common-social {
   transition: all 0.4s;
@@ -3814,7 +3823,7 @@ input.main-search-input::placeholder {
 }
 .testimonial-zero-oneitem .content p {
   font-size: 24px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 400;
   line-height: 140%;
 }
@@ -3875,7 +3884,7 @@ input.main-search-input::placeholder {
 .testimonial-zero-oneitemv3 p {
   font-size: 16px !important;
   line-height: 28px !important;
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 @media (max-width: 400px) {
   .testimonial-zero-oneitemv3 .testi-arrow {
@@ -3955,7 +3964,7 @@ input.main-search-input::placeholder {
   position: absolute;
   top: 0;
   left: 0;
-  content: "";
+  content: '';
   background: var(--theme);
   box-shadow: rgba(228, 235, 242, 0.2) 0px 8px 24px;
   border-top-left-radius: 50px;
@@ -4078,7 +4087,7 @@ input.main-search-input::placeholder {
 .case-studyv3-item .case-btn::before {
   background: var(--white);
   opacity: 20%;
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   border-radius: 50%;
@@ -4099,7 +4108,7 @@ input.main-search-input::placeholder {
 }
 .case-studyv3-item::before {
   position: absolute;
-  content: "";
+  content: '';
   top: -100%;
   width: 100%;
   height: 100%;
@@ -4181,17 +4190,21 @@ input.main-search-input::placeholder {
 .onhover-tabbing-wrap .nav-tabs .nav-link .right-info i {
   color: var(--white);
 }
-.onhover-tabbing-wrap .nav-tabs .nav-link.active, .onhover-tabbing-wrap .nav-tabs .nav-link:hover {
+.onhover-tabbing-wrap .nav-tabs .nav-link.active,
+.onhover-tabbing-wrap .nav-tabs .nav-link:hover {
   border-radius: unset;
   background: transparent;
 }
-.onhover-tabbing-wrap .nav-tabs .nav-link.active h4, .onhover-tabbing-wrap .nav-tabs .nav-link:hover h4 {
+.onhover-tabbing-wrap .nav-tabs .nav-link.active h4,
+.onhover-tabbing-wrap .nav-tabs .nav-link:hover h4 {
   color: var(--theme);
 }
-.onhover-tabbing-wrap .nav-tabs .nav-link.active .right-info, .onhover-tabbing-wrap .nav-tabs .nav-link:hover .right-info {
+.onhover-tabbing-wrap .nav-tabs .nav-link.active .right-info,
+.onhover-tabbing-wrap .nav-tabs .nav-link:hover .right-info {
   color: var(--theme);
 }
-.onhover-tabbing-wrap .nav-tabs .nav-link.active .right-info i, .onhover-tabbing-wrap .nav-tabs .nav-link:hover .right-info i {
+.onhover-tabbing-wrap .nav-tabs .nav-link.active .right-info i,
+.onhover-tabbing-wrap .nav-tabs .nav-link:hover .right-info i {
   color: var(--theme);
 }
 .onhover-tabbing-wrap .tcase-thumb {
@@ -4240,7 +4253,7 @@ input.main-search-input::placeholder {
 .step-working-processwrap .step-working-processitem .serial span {
   color: #8d8d8d;
   font-weight: 500;
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   line-height: 18px;
   transition: all 0.5s;
 }
@@ -4256,7 +4269,7 @@ input.main-search-input::placeholder {
   font-size: 22px;
   line-height: 40px;
   font-weight: 500;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   margin-left: 20px;
   z-index: 1;
 }
@@ -4265,10 +4278,10 @@ input.main-search-input::placeholder {
   position: absolute;
   left: -20px;
   top: -6px;
-  content: "";
+  content: '';
   width: 100%;
   height: 60px;
-  background: linear-gradient(90deg, #E3FF04 0%, rgba(239, 100, 76, 0.1) 60.08%);
+  background: linear-gradient(90deg, #e3ff04 0%, rgba(239, 100, 76, 0.1) 60.08%);
   border-radius: 100px;
   z-index: -1;
   opacity: 0;
@@ -4564,7 +4577,7 @@ input.main-search-input::placeholder {
   font-weight: 700;
   color: var(--white);
   text-transform: uppercase;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   line-height: 85px;
 }
 .footer-version-two .footer-widget .fdisplay-title .talk {
@@ -4573,7 +4586,7 @@ input.main-search-input::placeholder {
   display: block;
   color: var(--white);
   text-transform: uppercase;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-style: italic;
   line-height: 85px;
 }
@@ -4623,7 +4636,7 @@ input.main-search-input::placeholder {
   font-size: 150px;
   text-transform: uppercase;
   line-height: 85px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
 }
 @media (max-width: 1399px) {
@@ -4747,4 +4760,4 @@ input.main-search-input::placeholder {
 .footer-bottom-version-two {
   position: relative;
   z-index: 9;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

@@ -1,24 +1,28 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import { hariIndo, tanggalIndo, jamIndo } from '../../Api/Clock'; // adjust the path as needed
+import React from 'react'; // Import React
+import { useState, useEffect } from 'react'; // Import useState and useEffect
+import { hariIndo, tanggalIndo, jamIndo } from '../../Api/Clock'; // Import Function Clock
 
 const Header = () => {
-    const [day, setDay] = useState('');
-    const [date, setDate] = useState('');
-    const [time, setTime] = useState('');
+  const [day, setDay] = useState(''); // Set State Day
+  const [date, setDate] = useState(''); // Set State Date
+  const [time, setTime] = useState(''); // Set State Time
 
-    useEffect(() => {
-      const interval = setInterval(() => {
-        const now = new Date();
-        setDay(hariIndo(now.getDay()));
-        setDate(tanggalIndo(now));
-        setTime(jamIndo(now));
-      }, 1000);
+  // Use Effect
+  useEffect(() => {
+    // Set Interval
+    const interval = setInterval(() => {
+      const now = new Date(); // Set Date Now
+      setDay(hariIndo(now.getDay())); // Set Day
+      setDate(tanggalIndo(now)); // Set Date
+      setTime(jamIndo(now)); // Set Time
+    }, 1000);
 
-      return () => {
-        clearInterval(interval);
-      };
-    }, []);
+    // Clear Interval
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <div>
       {/* Custom Header Start */}
@@ -29,23 +33,13 @@ const Header = () => {
               <div className="d-lg-flex flex-xl-nowrap flex-wrap align-items-center justify-content-lg-between">
                 <div className="d-flex align-items-center justify-content-between">
                   <a href="index-2.html" className="brand-logo">
-                    <img
-                      className="w-75"
-                      src="assets/img/itsreezky/itsreezky-black.png"
-                      alt="logo"
-                    />
+                    <img className="w-75" src="assets/img/itsreezky/itsreezky-black.png" alt="logo" />
                   </a>
                   <div className="d-flex align-items-center gap-xxl-5 gap-5">
-                    <a
-                      href="javascript:void(0)"
-                      className="search-trigger search-icon d-lg-none d-block"
-                    >
+                    <a href="javascript:void(0)" className="search-trigger search-icon d-lg-none d-block">
                       <i className="fal fa-search" />
                     </a>
-                    <button
-                      className="navbar-toggle-btn d-block d-lg-none"
-                      type="button"
-                    >
+                    <button className="navbar-toggle-btn d-block d-lg-none" type="button">
                       <span />
                       <span />
                       <span />
@@ -57,17 +51,13 @@ const Header = () => {
                   <ul className="custom-nav d-lg-flex d-grid gap-xxl-10 gap-xl-8 gap-lg-5 gap-md-2 gap-2 pt-lg-0 pt-5">
                     <li className="menu-item position-relative">
                       <a href="/">
-                      <button className="position-relative ps-5  white-clr fw_500 cus-z1">
-                        Home
-                      </button>
+                        <button className="position-relative ps-5  white-clr fw_500 cus-z1">Home</button>
                       </a>
                     </li>
                     <li className="menu-item position-relative">
-                      <button className="position-relative  ps-5 fw_500 white-clr cus-z1">
-                        Pages
-                      </button>
+                      <button className="position-relative  ps-5 fw_500 white-clr cus-z1">Pages</button>
                       <ul className="sub-menu px-lg-4 py-xxl-3 py-2">
-                      <li className="menu-link py-1">
+                        <li className="menu-link py-1">
                           <a href="https://itsreezky.my.id" className="fw_500 white-clr">
                             Public Server V1
                           </a>
@@ -85,37 +75,30 @@ const Header = () => {
                       </ul>
                     </li>
                     <li className="menu-item position-relative">
-                        <a href="/portofolio">
-                      <button className="position-relative  ps-5 fw_500 white-clr cus-z1">
-                        Portofolio
-                      </button>
+                      <a href="/portofolio">
+                        <button className="position-relative  ps-5 fw_500 white-clr cus-z1">Portofolio</button>
                       </a>
                     </li>
                     <li className="menu-item position-relative">
-                      <button className="position-relative  ps-5 fw_500 white-clr cus-z1">
-                        Blog & News
-                      </button>
+                      <button className="position-relative  ps-5 fw_500 white-clr cus-z1">Blog & News</button>
                     </li>
                     <li className="menu-item position-relative">
                       <a href="/contact" className="fw_500">
-                      <button className="position-relative  ps-5 fw_500 white-clr cus-z1">
-                        Contact Us
-                      </button>
+                        <button className="position-relative  ps-5 fw_500 white-clr cus-z1">Contact Us</button>
                       </a>
                     </li>
                   </ul>
                 </div>
                 <div className="d-lg-flex d-none d-grid justify-content-center ph-clickwrap align-items-center gap-xxl-7 gap-xl-6 gap-lg-5 gap-3">
                   <div className="search-shopcart d-flex gap-xxl-9 gap-xl-5 gap-3">
-                    <a
-                      href="javascript:void(0)"
-                      className="search-trigger search-icon"
-                    >
+                    <a href="javascript:void(0)" className="search-trigger search-icon">
                       <i className="fal fa-search" />
                     </a>
                   </div>
                   <button className="d-flex align-items-center gap-sm-3 gap-2 touch-btn cmn-btn">
-                  {time} WIB<br/>{day}, {date}
+                    {time} WIB
+                    <br />
+                    {day}, {date}
                   </button>
                 </div>
               </div>
@@ -126,6 +109,6 @@ const Header = () => {
       {/* Custom Header End */}
     </div>
   );
-}
+};
 
 export default Header;

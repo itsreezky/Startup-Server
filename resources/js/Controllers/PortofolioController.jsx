@@ -1,18 +1,18 @@
-import "../bootstrap";
+import '../bootstrap';
 
-import React from "react";
-import ReactDOM from "react-dom/client";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
 // Importing Layouts
-import MainLayouts from "../Layouts/MainLayouts";
+import MainLayouts from '../Layouts/MainLayouts';
 
 // Importing Pages
-import Portofolio from "../Pages/Portofolio"
+import Portofolio from '../Pages/Portofolio';
 
-ReactDOM.createRoot(document.getElementById("Portofolio")).render(
-    <>
+ReactDOM.createRoot(document.getElementById('Portofolio')).render(
+  <>
     <MainLayouts>
-    <Portofolio />
+      <Portofolio />
     </MainLayouts>
   </>
 );

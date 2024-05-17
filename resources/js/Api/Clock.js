@@ -1,5 +1,5 @@
 // setting zona waktu
-Intl.DateTimeFormat().resolvedOptions().timeZone = "Asia/Jakarta";
+Intl.DateTimeFormat().resolvedOptions().timeZone = 'Asia/Jakarta';
 
 // hari indonesia
 export function hariIndo(hari) {
@@ -9,7 +9,20 @@ export function hariIndo(hari) {
 
 // bulan indonesia
 export function bulanIndo(bulan) {
-  const bulanfull = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+  const bulanfull = [
+    'Januari',
+    'Februari',
+    'Maret',
+    'April',
+    'Mei',
+    'Juni',
+    'Juli',
+    'Agustus',
+    'September',
+    'Oktober',
+    'November',
+    'Desember',
+  ];
   return bulanfull[bulan - 1];
 }
 

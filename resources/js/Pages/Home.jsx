@@ -6,25 +6,25 @@
 // Website Builder : React.js, Laravel, Vite, TailwindCSS, DaisyUI, Bootstrap, FontAwesome
 // Comment Date: 10/05/2024 15:02:54
 
-import React from "react";
+import React from 'react';
 
-import Home_Hero from "../Components/Home/Home_Hero";
+import Home_Hero from '../Components/Home/Home_Hero';
 
 // About
-import Home_SectionOneTextSlider from "../Components/Home/Home_SectioneOneTextSlider";
-import Home_SectionOne from "../Components/Home/Home_SectionOne";
+import Home_SectionOneTextSlider from '../Components/Home/Home_SectioneOneTextSlider';
+import Home_SectionOne from '../Components/Home/Home_SectionOne';
 
 // Founder
-import Home_FounderTextSlider from "../Components/Home/Home_FounderTextSlider";
-import Home_Founder from "../Components/Home/Home_Founder";
+import Home_FounderTextSlider from '../Components/Home/Home_FounderTextSlider';
+import Home_Founder from '../Components/Home/Home_Founder';
 
 // Portal
-import Home_PortalTextSlider from "../Components/Home/Home_PortalTextSlider";
-import Home_Portal from "../Components/Home/Home_Portal";
+import Home_PortalTextSlider from '../Components/Home/Home_PortalTextSlider';
+import Home_Portal from '../Components/Home/Home_Portal';
 
 // Blog
-import Home_BlogTextSlider from "../Components/Home/Home_BlogTextSlider";
-import Home_Blog from "../Components/Home/Home_Blog";
+import Home_BlogTextSlider from '../Components/Home/Home_BlogTextSlider';
+import Home_Blog from '../Components/Home/Home_Blog';
 
 const Home = () => {
   return (
@@ -48,11 +48,9 @@ const Home = () => {
         {/* Blog */}
         <Home_BlogTextSlider />
         <Home_Blog />
-
-
       </main>
     </div>
   );
-}
+};
 
 export default Home;

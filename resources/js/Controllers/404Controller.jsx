@@ -1,18 +1,18 @@
-import "../bootstrap";
+import '../bootstrap';
 
-import React from "react";
-import ReactDOM from "react-dom/client";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
 // Importing Layouts
-import MainLayouts from "../Layouts/MainLayouts";
+import MainLayouts from '../Layouts/MainLayouts';
 
 // Importing Pages
-import NotFound from "../Errors/404"
+import NotFound from '../Errors/404';
 
-ReactDOM.createRoot(document.getElementById("404")).render(
-    <>
+ReactDOM.createRoot(document.getElementById('404')).render(
+  <>
     <MainLayouts>
-    <NotFound />
+      <NotFound />
     </MainLayouts>
   </>
 );

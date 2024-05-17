@@ -25,7 +25,6 @@ const Portofolio = () => {
         <Portofolio_Breadcrumnd />
         {/* Portofolio */}
         <Portofolio_Reezky />
-
       </main>
     </div>
   );

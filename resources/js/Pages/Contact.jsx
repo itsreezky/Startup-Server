@@ -25,7 +25,6 @@ const Portofolio = () => {
         <Contact_Breadcrumnd />
         {/* Contact */}
         <Contact_Reezky />
-
       </main>
     </div>
   );

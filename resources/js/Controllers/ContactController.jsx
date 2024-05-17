@@ -1,18 +1,18 @@
-import "../bootstrap";
+import '../bootstrap';
 
-import React from "react";
-import ReactDOM from "react-dom/client";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
 // Importing Layouts
-import MainLayouts from "../Layouts/MainLayouts";
+import MainLayouts from '../Layouts/MainLayouts';
 
 // Importing Pages
-import Contact from "../Pages/Contact"
+import Contact from '../Pages/Contact';
 
-ReactDOM.createRoot(document.getElementById("Contact")).render(
-    <>
+ReactDOM.createRoot(document.getElementById('Contact')).render(
+  <>
     <MainLayouts>
-    <Contact />
+      <Contact />
     </MainLayouts>
   </>
 );
