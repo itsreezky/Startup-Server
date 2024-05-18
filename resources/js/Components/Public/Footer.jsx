@@ -114,7 +114,7 @@ const Footer = () => {
                   </h5>
                   <ul className="link-footer d-grid gap-xxl-5 gap-4" data-aos="zoom-in" data-aos-duration={1400}>
                     <li>
-                      <a href="about.html" className="d-flex align-items-center gap-2 flink-items pra-clr">
+                      <a href="#" className="d-flex align-items-center gap-2 flink-items pra-clr">
                         <span className="ani-icons">
                           <i className="fas fa-angle-double-right pra-clr" />
                         </span>
@@ -122,7 +122,7 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="service.html" className="d-flex align-items-center gap-2 flink-items pra-clr">
+                      <a href="#" className="d-flex align-items-center gap-2 flink-items pra-clr">
                         <span className="ani-icons">
                           <i className="fas fa-angle-double-right pra-clr" />
                         </span>
@@ -130,7 +130,7 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="blog-grid.html" className="d-flex align-items-center gap-2 flink-items pra-clr">
+                      <a href="#" className="d-flex align-items-center gap-2 flink-items pra-clr">
                         <span className="ani-icons">
                           <i className="fas fa-angle-double-right pra-clr" />
                         </span>
@@ -138,7 +138,7 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="contact.html" className="d-flex align-items-center gap-2 flink-items pra-clr">
+                      <a href="#" className="d-flex align-items-center gap-2 flink-items pra-clr">
                         <span className="ani-icons">
                           <i className="fas fa-angle-double-right pra-clr" />
                         </span>
@@ -185,7 +185,7 @@ const Footer = () => {
                   </h5>
                   <ul className="link-footer d-grid gap-xxl-5 gap-4" data-aos="zoom-in" data-aos-duration={1400}>
                     <li>
-                      <a href="service.html" className="d-flex align-items-center gap-2 flink-items pra-clr">
+                      <a href="#" className="d-flex align-items-center gap-2 flink-items pra-clr">
                         <span className="ani-icons">
                           <i className="fas fa-angle-double-right pra-clr" />
                         </span>
@@ -193,7 +193,7 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="study-grid.html" className="d-flex align-items-center gap-2 flink-items pra-clr">
+                      <a href="#" className="d-flex align-items-center gap-2 flink-items pra-clr">
                         <span className="ani-icons">
                           <i className="fas fa-angle-double-right pra-clr" />
                         </span>
@@ -201,7 +201,7 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="study-grid.html" className="d-flex align-items-center gap-2 flink-items pra-clr">
+                      <a href="#" className="d-flex align-items-center gap-2 flink-items pra-clr">
                         <span className="ani-icons">
                           <i className="fas fa-angle-double-right pra-clr" />
                         </span>
@@ -284,12 +284,12 @@ const Footer = () => {
             <a href="#top" className="footer-topscroll d-center themebg">
               <i className="fas fa-arrow-up" />
             </a>
-            <a href="index-2.html" className="footer-logov1 m-sm-0 m-auto">
+            <a href="http://itsreezky.my.id" className="footer-logov1 m-sm-0 m-auto">
               <img src="assets/img/itsreezky/itsreezky-black.png" alt="img" />
             </a>
             <p className="pra-clr">
               © All Copyright 2024 by{' '}
-              <a href="index-2.html" className="theme-clr">
+              <a href="http://itsreezky.my.id" className="theme-clr">
                 Reezky
               </a>
             </p>

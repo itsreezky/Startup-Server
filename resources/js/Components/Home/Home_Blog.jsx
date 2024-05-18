@@ -14,7 +14,7 @@ const Home_Blog = () => {
               <h2 className="stitle">Check News &amp; Articles</h2>
             </div>
             <a
-              href="blog-grid.html"
+              href="#"
               className="radius-btn d-inline-flex radius100 py-xxl-2 py-2 px-xxl-5 px-5 theme-border theme-clr gap-xxl-4 gap-3 mb-xxl-8 mb-xl-6 mb-5 style-2"
             >
               View all Artcile
@@ -28,7 +28,7 @@ const Home_Blog = () => {
               <div className="blog-widget-itemv4">
                 <div className="thumb w-100 overflow-hidden mb-xxl-7 mb-xl-6 mb-4 position-relative">
                   <img src="assets/img/itsreezky/itsreezky-moockup2.png" alt="img" className="w-100 overflow-hidden" />
-                  <a href="blog-details.html" className="blog-v4-btn d-center">
+                  <a href="#" className="blog-v4-btn d-center">
                     <span className="rot60">
                       <i className="fa-solid fa-arrow-up" />
                     </span>
@@ -37,10 +37,10 @@ const Home_Blog = () => {
                 <div className="blog-cont">
                   <div className="d-flex align-items-center gap-xxl-5 gap-xl-4 gap-3 mb-xxl-5 mb-xl-4 mb-3">
                     <a
-                      href="blog-details.html"
+                      href="#"
                       className="radius-btn cmn-border radius100 py-xxl-1 py-1 px-xxl-4 px-3 theme-clr style-2"
                     >
-                      Creative
+                      Reezky
                       <span className="rot60 d-inline-block ml-10">
                         <i className="fas fa-arrow-up theme-clr" />
                       </span>
@@ -48,7 +48,7 @@ const Home_Blog = () => {
                     <span className="bspan-clr">MARCH 24, 2024</span>
                   </div>
                   <h5>
-                    <a href="blog-details.html" className="white-clr">
+                    <a href="#" className="white-clr">
                       Transforming Challenges into
                     </a>
                   </h5>
@@ -59,7 +59,7 @@ const Home_Blog = () => {
               <div className="blog-widget-itemv4">
                 <div className="thumb w-100 overflow-hidden mb-xxl-7 mb-xl-6 mb-4 position-relative">
                   <img src="assets/img/itsreezky/itsreezky-moockup4.png" alt="img" className="w-100 overflow-hidden" />
-                  <a href="blog-details.html" className="blog-v4-btn d-center">
+                  <a href="#" className="blog-v4-btn d-center">
                     <span className="rot60">
                       <i className="fa-solid fa-arrow-up" />
                     </span>
@@ -68,10 +68,10 @@ const Home_Blog = () => {
                 <div className="blog-cont">
                   <div className="d-flex align-items-center gap-xxl-5 gap-xl-4 gap-3 mb-xxl-5 mb-xl-4 mb-3">
                     <a
-                      href="blog-details.html"
+                      href="#"
                       className="radius-btn cmn-border radius100 py-xxl-1 py-1 px-xxl-4 px-3 theme-clr style-2"
                     >
-                      Creative
+                      Reezky
                       <span className="rot60 d-inline-block ml-10">
                         <i className="fas fa-arrow-up theme-clr" />
                       </span>
@@ -79,7 +79,7 @@ const Home_Blog = () => {
                     <span className="bspan-clr">MARCH 24, 2024</span>
                   </div>
                   <h5>
-                    <a href="blog-details.html" className="white-clr">
+                    <a href="#" className="white-clr">
                       Design Inspiration Where to Find
                     </a>
                   </h5>
@@ -90,7 +90,7 @@ const Home_Blog = () => {
               <div className="blog-widget-itemv4">
                 <div className="thumb w-100 overflow-hidden mb-xxl-7 mb-xl-6 mb-4 position-relative">
                   <img src="assets/img/itsreezky/itsreezky-moockup5.png" alt="img" className="w-100 overflow-hidden" />
-                  <a href="blog-details.html" className="blog-v4-btn d-center">
+                  <a href="#" className="blog-v4-btn d-center">
                     <span className="rot60">
                       <i className="fa-solid fa-arrow-up" />
                     </span>
@@ -99,10 +99,10 @@ const Home_Blog = () => {
                 <div className="blog-cont">
                   <div className="d-flex align-items-center gap-xxl-5 gap-xl-4 gap-3 mb-xxl-5 mb-xl-4 mb-3">
                     <a
-                      href="blog-details.html"
+                      href="#"
                       className="radius-btn cmn-border radius100 py-xxl-1 py-1 px-xxl-4 px-3 theme-clr style-2"
                     >
-                      Creative
+                      Reezky
                       <span className="rot60 d-inline-block ml-10">
                         <i className="fas fa-arrow-up theme-clr" />
                       </span>
@@ -110,7 +110,7 @@ const Home_Blog = () => {
                     <span className="bspan-clr">MARCH 24, 2024</span>
                   </div>
                   <h5>
-                    <a href="blog-details.html" className="white-clr">
+                    <a href="#" className="white-clr">
                       Creating new working in the digital
                     </a>
                   </h5>

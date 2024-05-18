@@ -75,7 +75,7 @@ const Header = () => {
                       </ul>
                     </li>
                     <li className="menu-item position-relative">
-                      <a href="/portofolio">
+                      <a href="portofolio">
                         <button className="position-relative  ps-5 fw_500 white-clr cus-z1">Portofolio</button>
                       </a>
                     </li>
@@ -83,7 +83,7 @@ const Header = () => {
                       <button className="position-relative  ps-5 fw_500 white-clr cus-z1">Blog & News</button>
                     </li>
                     <li className="menu-item position-relative">
-                      <a href="/contact" className="fw_500">
+                      <a href="contact" className="fw_500">
                         <button className="position-relative  ps-5 fw_500 white-clr cus-z1">Contact Us</button>
                       </a>
                     </li>
