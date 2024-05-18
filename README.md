@@ -30,7 +30,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Feel free to customize this description to better fit your needs and any additional details specific to your project.
 
 ## Screenshoot
-$$$ 1. Homepage
+### 1. Homepage
 <a href="http://itsreezky.my.id" target="_blank"><img src="http://resource.itsreezky.my.id/demo-web/startup-server/Homepage.png" width="450" alt="Home Page"></a>
 ### 2. Portfolio Page
 <a href="http://itsreezky.my.id" target="_blank"><img src="http://resource.itsreezky.my.id/demo-web/startup-server/Portofoliopage.png" width="450" alt="Portfolio Page"></a>
