@@ -13,3 +13,8 @@ Route::get('/portofolio', function () {
 Route::get('/contact', function () {
     return view('Contact');
 });
+
+
+Route::get('/{any}', function () {
+    return view('404');
+})->where('any', '.*');
