@@ -277,7 +277,7 @@ const Home_Hero = () => {
                   <div className="camera" />
                   <div className="display">
                     <div className="artboard artboard-demo phone-1">
-                      <iframe className="ms-2" src="http://itsreezky.my.id" width={320} height={600} />
+                      <iframe className="ms-2 mt-5" src="http://hello.itsreezky.my.id" width={320} height={650} />
                     </div>
                   </div>
                 </div>
